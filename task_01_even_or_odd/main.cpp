@@ -1,21 +1,14 @@
-
 #include <iostream>
+using namespace std;
+
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    long long n;
+    int n;
+    cin >> n;
 
-    std::cout << "Nacital cislo: ";
-
-    std::cin >> n;
-    if (!(n))
-
-        return 0;
-
-    return 0;
-
-    if (!(std::cin >> n))
-        return 0;
-    // TODO: print "even" or "odd"
+    if (n % 2 == 0) {
+        cout << "even";
+    } else {
+        cout << "odd";
+    }
     return 0;
 }

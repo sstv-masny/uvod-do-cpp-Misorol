@@ -1,18 +1,20 @@
-
 #include <iostream>
+using namespace std;
+
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie();
-    long long n;
-    std::cout << "Zadaj cislo";
+    int a, b, c;
+    cin >> a >> b >> c;
 
-    std::cin >> n;
-    if (n % 2 == 0) {
-        std::cout << "even" << std::endl;
+    int min = a;
 
-    } else {
-        std::cout << "odd" << std::endl;
+    if (b < min) {
+        min = b;
     }
+    if (c < min) {
+        min = c;
+    }
+
+    cout << min;
 
     return 0;
 }
