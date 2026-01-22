@@ -1,10 +1,20 @@
-
 #include <iostream>
+using namespace std;
+
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    long long a,b,c;
-    if (!(std::cin >> a >> b >> c)) return 0;
-    // TODO: print the minimum of a, b, c
+    int a, b, c;
+    cin >> a >> b >> c;
+
+    int min = a;
+
+    if (b < min) {
+        min = b;
+    }
+    if (c < min) {
+        min = c;
+    }
+
+    cout << min;
+
     return 0;
 }
